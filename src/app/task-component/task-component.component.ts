@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Task } from '../task';
 
 
 @Component({
@@ -10,8 +9,7 @@ import { Task } from '../task';
 export class TaskComponentComponent implements OnInit {
   title = 'ADD TASK APP';
   details: string = "Details";
-  priority = ['High', 'Super Flexible',
-            'Super Hot', 'Weather Changer'];
+  priority_arr = ['High', 'Normal','Medium', 'Low'];
   list:any[] = [];
   
   addTask(item:string,priority:string,date:string){
